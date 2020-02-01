@@ -47,7 +47,7 @@ class ArticCard : StandardCard {
             case 2: serie = new int[] {CLUBS, SPADES, DIAMONDS, HEARTS}; break;
             case 3:
             case 4: serie = new int[] {DIAMONDS, CLUBS, HEARTS, SPADES}; break;
-            default: serie = new int[] {SPADES, DIAMONDS, CLUBS, HEARTS}; break;
+            default: serie = new int[] {SPADES, HEARTS, CLUBS, DIAMONDS}; break;
         }
 
         suit = serie[ (serialSum + Array.FindIndex(serie, x => x == fakeSuit)) % serie.Length ];
